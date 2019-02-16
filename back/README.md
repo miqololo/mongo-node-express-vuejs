@@ -17,3 +17,7 @@
     - apiKey is unique string for authorize our api calls
     - defaultPageLimit is for give default count of items in list
 - after config the properties run in back folder node server which will start the project on port that you write in cofiguration file 
+
+# Api docs
+- You can find information about endpoints in client_api.postman_collection.json file which should be imported to postman
+- And after run project you can find it by url <api_url>/api-docs

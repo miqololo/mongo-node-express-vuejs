@@ -1,0 +1,352 @@
+{
+	"variables": [],
+	"info": {
+		"name": "client_api",
+		"_postman_id": "15958248-f8dc-57f1-cc25-6fb0c8128055",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Delete Client",
+			"request": {
+				"url": "http://localhost:8000/client/5c652c003ef8fd2e209f4128",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Client",
+			"request": {
+				"url": "http://localhost:8000/client/5c65d83c2928a41564693a87",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"mikayeldasdasdsa\",\n\t\"email\": \"dsadfdgfsdddsassfsd@fsadfds.rr\",\n\t\"phone\": \"+37498104414\",\n\t\"providers\": [{\"_id\":\"5c65d78f946a3802e41c0cbf\"},{\"_id\":\"5c65d796946a3802e41c0cc0\"}]\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Client Info",
+			"request": {
+				"url": "http://localhost:8000/client/5c648d0e6a125e07e4b4837f",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Client",
+			"request": {
+				"url": "http://localhost:8000/client",
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"mikayeldasdasdsa\",\n\t\"email\": \"dsadfdgfsdddsafsd@fsadfds.rr\",\n\t\"phone\": \"+37498104414\",\n\t\"providers\": [{\"_id\":\"5c65d78f946a3802e41c0cbf\"},{\"_id\":\"5c65d796946a3802e41c0cc0\"}]\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Client List",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8000/client?page=1&limit=10&sortBy=name&sortType=true&searchBy=name&searchField=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortBy",
+							"value": "name",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "sortType",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "searchBy",
+							"value": "name",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "searchField",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "miko.galstyan@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "miqo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+37498104414",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "providers[0]",
+							"value": "{id:1,name:'test1'}",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "providers[1]",
+							"value": "{id:2,name:'test2'}",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update Provider",
+			"request": {
+				"url": "http://localhost:8000/provider/5c6532dafac06649c4d4e02b",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					},
+					{
+						"key": "",
+						"value": "",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"hihi\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Provider",
+			"request": {
+				"url": "http://localhost:8000/provider/5c6532dafac06649c4d4e02b",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Provider",
+			"request": {
+				"url": "http://localhost:8000/provider",
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"some name\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Provider Info",
+			"request": {
+				"url": "http://localhost:8000/provider/5c6532dafac06649c4d4e02b",
+				"method": "GET",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Provider List",
+			"request": {
+				"url": "http://localhost:8000/provider",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "authorization",
+						"value": "Auth <authentication_key_for_work_project>",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "miko.galstyan@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "miqo",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "+37498104414",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "providers[0]",
+							"value": "{id:1,name:'test1'}",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "providers[1]",
+							"value": "{id:2,name:'test2'}",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
