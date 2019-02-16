@@ -1,0 +1,483 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "Client Api",
+    "description": "TODO: Add Description",
+    "contact": {}
+  },
+  "host": "localhost:8000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/client/5c652c003ef8fd2e209f4128": {
+      "delete": {
+        "description": "",
+        "summary": "Delete Client",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Client5c652c003ef8fd2e209f4128Delete",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/client/5c65d83c2928a41564693a87": {
+      "put": {
+        "description": "",
+        "summary": "Update Client",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Client5c65d83c2928a41564693a87Put",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UpdateClientRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/client/5c648d0e6a125e07e4b4837f": {
+      "get": {
+        "description": "",
+        "summary": "Client Info",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Client5c648d0e6a125e07e4b4837fGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/client": {
+      "post": {
+        "description": "",
+        "summary": "Create Client",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ClientPost",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateClientRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "summary": "Client List",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ClientGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": true,
+            "type": "integer",
+            "format": "int32",
+            "description": ""
+          },
+          {
+            "name": "sortBy",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "sortType",
+            "in": "query",
+            "required": true,
+            "type": "boolean",
+            "description": ""
+          },
+          {
+            "name": "searchBy",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "searchField",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/provider/5c6532dafac06649c4d4e02b": {
+      "put": {
+        "description": "",
+        "summary": "Update Provider",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Provider5c6532dafac06649c4d4e02bPut",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UpdateProviderRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "summary": "Delete Provider",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Provider5c6532dafac06649c4d4e02bDelete",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "summary": "Provider Info",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "Provider5c6532dafac06649c4d4e02bGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/provider": {
+      "post": {
+        "description": "",
+        "summary": "Create Provider",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ProviderPost",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CreateProviderRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "summary": "Provider List",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "ProviderGet",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "UpdateClientRequest": {
+      "title": "UpdateClientRequest",
+      "example": {
+        "name": "mikayeldasdasdsa",
+        "email": "dsadfdgfsdddsassfsd@fsadfds.rr",
+        "phone": "+37498104414",
+        "providers": [
+          {
+            "_id": "5c65d78f946a3802e41c0cbf"
+          },
+          {
+            "_id": "5c65d796946a3802e41c0cc0"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "providers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Provider"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "email",
+        "phone",
+        "providers"
+      ]
+    },
+    "Provider": {
+      "title": "Provider",
+      "type": "object",
+      "properties": {
+        "_id": {
+          "example": "5c65d78f946a3802e41c0cbf",
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id"
+      ]
+    },
+    "CreateClientRequest": {
+      "title": "CreateClientRequest",
+      "example": {
+        "name": "mikayeldasdasdsa",
+        "email": "dsadfdgfsdddsafsd@fsadfds.rr",
+        "phone": "+37498104414",
+        "providers": [
+          {
+            "_id": "5c65d78f946a3802e41c0cbf"
+          },
+          {
+            "_id": "5c65d796946a3802e41c0cc0"
+          }
+        ]
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "providers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Provider"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "email",
+        "phone",
+        "providers"
+      ]
+    },
+    "UpdateProviderRequest": {
+      "title": "UpdateProviderRequest",
+      "example": {
+        "name": "hihi"
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "CreateProviderRequest": {
+      "title": "CreateProviderRequest",
+      "example": {
+        "name": "some name"
+      },
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}
