@@ -1,29 +1,7 @@
-# ui
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Vue ui
+- Got to ./ui repository from project directory
+- run npm install comand for install dependencies
+- go to src directory and open main.js file
+- find row window.axios.defaults.headers.authorization = 'Auth <authentication_key_for_work_project>'; and write your api key instead of authentication_key_for_work_project
+- for start development envoirment run vue serve
+- for build application run npm run build

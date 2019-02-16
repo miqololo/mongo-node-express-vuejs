@@ -14,7 +14,12 @@ app.use(cors());
 app.use(bodyParser.json());
 
 function connect() {
-    mongoose.connect(`mongodb://${config.monogoDb.host}:${config.monogoDb.port}/${config.monogoDb.database}`,{ useNewUrlParser: true });
+	if(config.monogoDb.username.length>0){
+		mongoose.connect(`mongodb://config.monogoDb.username:config.monogoDb.password@${config.monogoDb.host}:${config.monogoDb.port}/${config.monogoDb.database}`,{ useNewUrlParser: true });	
+	}else{
+		mongoose.connect(`mongodb://${config.monogoDb.host}:${config.monogoDb.port}/${config.monogoDb.database}`,{ useNewUrlParser: true });	
+	}
+    
     mongoose.set('useFindAndModify', true);
     return mongoose.connection;
 }
